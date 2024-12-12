@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio</title> <!--Título do separador -->
+  <meta name="description"
+    content="Explora o portfólio criativo de Tânia Couto, designer e fotógrafa. Descobre uma coleção de projetos que refletem inovação, paixão e um olhar atento aos detalhes.">
+
+  <link rel="shortcut icon" href="../img/minilogo.png" type="image/x-icon">
+  <!--link para colocar imagem junto do titulo do separador.-->
+
+  <!-- devo colocar o link do bootsrap sempre antes da ligação do ficheiro css, porque posso querer usar algumas classes do bootstrap mas posso mais tarde querer alterar e sobrepor com as minhas definiçoes -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <!-- !!!!!!!!!!  colocar ". ." para que encontre a imagem dentro da pasta  -->
+  <link rel="stylesheet" href="../css/index.css"> <!--Faz a ligação com o ficheiro de css.-->
+  <link rel="stylesheet" href="../css/sobre.css">
+  <!--Faz a ligação com o ficheiro de css sobre e sobrepoe as informaçoes doultimo ficheiro escrito.-->
+
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar sticky-top navbar-expand-lg">
+    <!-- acrescentar sticky top para isto ficar colado ao topo sem desaparecer da página -->
+    <!-- logotipo afixado na nav bar -->
+    <a class="navbar-brand" href="../index.html" <p align="center"><img src="../img/logo_semfundo.png"
+        class="imagem-logo" alt="logótipo do Portfolio de Tânia Couto"></p></a>
+    <!-- código - ms-auto, alinha o conteudo À direita e me-auto alinha à esquerda -->
+    <div class="ms-auto">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <!-- se quiser que o apareça a negrito o nome da pagina coloco o -active- depois da class -->
+            <a class="nav-link" aria-current="page" href="../index.html#sobre">Sobre</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html#areas">Interesses</a>
+          </li>
+          <!-- # indica que é dentro da propria pagina  -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">Fotografia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html#contactar">Contactar</a>
+          </li>
+
+          <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown link
+              </a>
+              artigos no dropdown
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul> 
+            </li>-->
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+
+  <div id="fotografia-grid">
+    <div id="section section1 "
+      style="padding-top:80px; padding-bottom: 80px; width:80%; margin-left: auto; margin-right: auto;">
+
+      <div class="title-work">
+        <h5 class="card-title"> Para que as memórias <br> <b>nunca</b> se desvaneçam...
+        </h5>
+      </div>
+
+      <div class="cartao-3">
+        <div class="row row-cols-1 row-cols-md-3 g-2">
+          <div class="col"> 
+            <a href="../html/teste.html" style="text-decoration: none; color: inherit;"> 
+            <div class="card h-100">
+              <img src="../img/london4.png" class="card-img-top" alt="...">
+              <div class="card-img-overlay text-bottom-overlay">
+                <p class="card-title1">Londres</p>
+                <!-- <p class="card-text">Uma viagem por Londres...</p> -->
+              </div>
+            </div>
+            </a>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <img src="../img/espanha.png" class="card-img-top" alt="...">
+
+              <div class="card-img-overlay text-bottom-overlay">
+                <p class="card-title1">Espanha</p>
+                <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p> -->
+
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="col">
+            <div class="card h-100">
+              <img src="../img/açores.png" class="card-img-top" alt="...">
+
+              <div class="card-img-overlay text-bottom-overlay">
+                <p class="card-title1">Açores</p>
+                <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p> -->
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <img src="../img/gul2.jpg" class="card-img-top" alt="...">
+
+              <div class="card-img-overlay text-bottom-overlay">
+                <p class="card-title1">Gulbenkian</p>
+                <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p> -->
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <img src="../img/ferreirotendais.png" class="card-img-top" alt="...">
+
+              <div class="card-img-overlay text-bottom-overlay">
+                <p class="card-title1">Ferreiro de Tendais</p>
+                <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p> -->
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <img src="../img/peniche1.jpg" class="card-img-top" alt="...">
+
+              <div class="card-img-overlay text-bottom-overlay">
+                <p class="card-title1">Peniche</p>
+                <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p> -->
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-line"></div>
+
+  <div id="section" style="padding-top:80px; padding-bottom: 80px; width:80%; margin-left: auto; margin-right: auto;">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        
+        <div class="title-work">
+          <h5 class="card-title"> ... e <b>novas memórias</b> se 
+             <br> possam criar em cada viagem, 
+             <br>em cada oportunidade!
+          </h5>
+        </div>
+
+      </div>
+      <div class="col-12 col-md-6">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="../img/carrossel.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="../img/carrossel1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/carrossel2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/carrossel3.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="footer-line"></div>
+
+
+  <div id="form-contact" style="padding-top:80px; padding-bottom: 80px; width:80%; margin-left: auto; margin-right: auto;">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          
+          <div class="title-work">
+            <h3 class="form-name"> Contactos </h3>
+
+            <form action="https://api.staticforms.xyz/submit" method="post">
+              <!-- CONFIGURAÇÕES PARA O FORMULÁRIO -->
+              <input type="hidden" name="accessKey" value="d52fae44-5d7f-4e93-919f-618d68d7b297"> <!--Chave de configuração-->
+              <input type="hidden" name="redirectTo" value="http://localhost:3000/Projeto_v1/html/resposta.html"> <!-- URL da página a ser re-direcionada após envio da informação-->
+              <input type="hidden" name="replyTo" value="@">
+              <input type="text" name="honeypot" style="display: none;">
+              <!-- FIM DAS CONFIGURAÇÕES PARA O FORMULÁRIO -->
+
+              <!-- campos do formulário (colocar um $ nos nomes dos campos) -->
+               <div class="form-floating mb-3">
+                <input type="text" name="$nome" id="nome" 
+                placeholder="Insira nome" class="form-control" required>
+                <label for="floatingInput"> Nome </label>
+              </div>
+
+              <div class="form-floating mb-3">
+              <input type="email" name="$email" id="email" 
+              placeholder="E-mail" class="form-control">
+              <label for="floatingInput"> E-mail: </labe02l>
+            </div>
+           
+              <div class="form-floating mb-3">
+                <input type="telefone" name="$telefone" 
+                id="telefone" placeholder="telefone" class="form-control" pattern="[0-9]{9}" required>
+                <label for="floatingInput"> Telefone </label>
+              </div>
+
+              <label for="nome"> Mensagem: </label>
+
+              <textarea name="mensagem" class="form-control" id="floatingTextarea2" rows="3"></textarea>
+              <br><br>
+
+              <input type="date" name="$data" id="data" placeholder="Insira a data" class="form-control">
+              <br><br>
+
+              <button type="submit" class="btn-1" value="submit">Solicitar Informações</button>
+
+            
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div id="mapa" class="mapa">
+            <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11528.812434680864!2d-8.659533572628522!3d41.11245834015882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2470011ae25cb9%3A0x10f9b38938cd3dc5!2sPraia%20de%20Canide%20Sul!5e1!3m2!1spt-BR!2spt!4v1733259559017!5m2!1spt-BR!2spt"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+          </div>
+  
+          
+        </div>
+      </div>
+    </div>
+    </div>
+ 
+
+
+<!-- Footer -->
+<footer class="custom-footer">
+  <div class="footer-line"></div>
+  <div class="footer-top">
+    <div class="footer-column">
+      <h4>Tânia Couto</h4>
+    </div>
+    <!-- <div class="footer-column">
+      <h5>Páginas</h5>
+      <ul>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Premium Paper</a></li>
+        <li><a href="#">Testing Pens</a></li>
+        <li><a href="#">Paper Layouts</a></li>
+      </ul>
+    </div> -->
+    <div class="footer-column">
+      <h5>Páginas</h5>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#sobre">Sobre</a></li>
+        <li><a href="../index.html#areas">Áreas de Interesse</a></li>
+        <li><a href="./html/trabalho.html">Fotografia</a></li>
+      </ul>
+    </div>
+    <!-- <div class="footer-column">
+      <h5>Brand</h5>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Brand Assets</a></li>
+        <li><a href="#">Black Friday</a></li>
+        <li><a href="#">Retailers</a></li>
+        <li><a href="#">Sustainable Practices</a></li>
+      </ul>
+    </div> -->
+    <div class="footer-column">
+      <h5>Contactos</h5>
+      <ul>
+        <li><a >tania.alves.couto@gmail.com</a></li>
+        <li><a >(+351) 915637408</a></li>
+        <li><a >Porto, Portugal</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-line2"></div>
+    <p>&copy; taniaalvescouto 2024</p>
+      <!-- <a href="#">Privacy Policy</a> · <a href="#">Terms and Conditions</a> · <a
+        href="#">Livro de Reclamações</a> -->
+    <div class="social-icons">
+      <a href="https://www.behance.net/taniacouto"  target="_blank"><img src="../img/behance.png" alt="Behance"></a>
+      <a href="https://www.linkedin.com/in/taniaalvescouto/" target="_blank"><img src="../img/linkedin.png" alt="Instagram"></a>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+
+</html>
+

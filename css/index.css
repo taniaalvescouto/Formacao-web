@@ -1,0 +1,404 @@
+/* para fazer import da fonte através do google */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* define-se no inicio de qualquer site para eliminar qualquer caracteristicas inicial predifinida */
+*{ 
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+
+header{
+    background-color: rgb(104, 103, 103);
+    height: 100px;
+    /* colocar no header um background sobreposto em gradiente
+     background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(187, 31, 31)50%, rgb(255, 255, 255) 0% ); */
+
+}
+
+body{
+    background-color: rgb(242, 242, 242);
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+/* colocar o nome da CLASS da imagem */
+.imagem-logo{
+    height: 80px; 
+    /* height-coloco em px para que a imagem não altere quando altero a dimensão da janela */
+    border-radius: 10px;
+    /* border- radius arredondar os cantos das imagens  */
+    /* border-color: rgb(233, 153, 33);
+    border-style: solid;
+    border-width: 5px;  cria um stroke à imagem */
+    margin-top: 10px;
+    /* box-shadow: 2px 5px 7px rgb(168, 1, 1);  cria uma shadow para a imagem na cor vermelha*/
+}
+
+.titulo, .subtitulo{
+ /* <uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 100 to 900 */
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-size: 20px;
+        color: rgb(207, 0, 0);
+        text-align: center;
+       
+}
+
+.subtitulo{
+           font-weight: 500;
+           font-size: 20px;
+           color: black;
+   }
+
+
+/* .tabela-cabecalho{
+    width: 100%;
+    text-align: center;
+   } */
+
+  
+
+   .navbar{
+    background-color: rgb(255, 255, 255,0.7);
+    font-family: "Inter", sans-serif;
+    padding-left:50px;
+    padding-right:50px;
+    box-shadow: 2px 4px 5px rgba(131, 131, 131, 0.808); 
+   }
+
+   .nav-link{
+    margin-left: 20px;
+    /* caso queira colocar botão na nav, como configurar */
+    background-color: rgb(223, 181, 46);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+   }
+   
+    /* para que haja reaçao quando se passa o rato por cima do nav link */
+   .nav-link:hover{
+    background-color: rgb(163, 141, 43);
+    box-shadow:2px 4px 5px rgba(131, 131, 131, 0.808); 
+    scale:1.1;
+    font-weight: 500;
+   }
+
+   .redes-sociais img{
+    width: 30px;
+   }
+   .redes-sociais a{
+    text-decoration:none;
+   }
+
+   .dropdown-menu{
+    background-color: rgb(255, 255, 255);
+   }
+
+
+
+
+   .section{
+    margin:100px;
+
+   }
+  
+
+   .tipo-fonte1{
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-size: 15px;
+   }
+   
+
+   /* section 1 */
+   .section1{
+    margin-left: auto;
+    margin-right: auto;
+    
+   }
+
+.cartao-3{
+    margin-top: 10px;
+}
+
+.card-img,.card-img-top{
+  width: 100%;      /* A largura será sempre 100% da coluna */
+  height: 100%;     /* A altura será 100% da coluna */
+  object-fit: cover; 
+}
+
+.card-img-overlay{
+  padding-left: 20px;
+}
+
+.card-title{
+  font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-size: 40px;
+
+}
+
+.card-text{
+  font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-size: 20px;
+
+}
+
+.text-bottom-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* text-align: center; /* Alinha o texto horizontalmente ao centro (opcional) */
+    /* background: rgba(0, 0, 0, 0.5); Fundo escuro semitransparente (opcional) */ 
+    color: white; /* Cor do texto para contraste */
+    padding-right: 50px; /* Espaçamento para dar margem ao texto */
+    padding-left: 20px;
+}
+
+
+.card-img{
+    height: 500px;
+    width: auto;
+   
+}
+
+
+/* acaba section1 */
+   
+/* section2 */
+.block-medium{
+  padding-top: 30px;
+  padding-bottom: 20px;
+  
+}
+.apresentation_text{
+  width: 70%;
+}
+
+.contact_text{
+  width: 70%;
+}
+.contact_text h1{
+  font-weight: 600;
+  color:  rgb(223, 181, 46);;
+}
+
+.btn{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 10px;
+  padding: 15px;
+  border-color: #000;
+  border-radius:15px;
+  border-width: 2px;
+}
+.btn:hover{
+  color: white;
+  border-color: #000;
+  background-color: #000;
+}
+
+.btn-1{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #000;
+  border-radius:15px;
+  border-width: 2px;
+}
+.btn-1:hover{
+  color: rgb(0, 0, 0);
+  border-color: #000;
+  background-color: #ffffff;
+}
+.title-work{
+  margin-bottom: 40px;
+}
+
+
+.card-title1{
+  font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-size: 30px;
+
+}
+
+/* ID: fotografia grid */
+/* substituir o nome da classe quando quiser aplicar a mais coisas */
+
+.fotogrid {
+  overflow: hidden; /* Garante que a imagem não "sai" do card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.fotogrid:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+}
+
+.card-img-top {
+  transition: transform 0.3s ease; /* Animação suave para a imagem */
+}
+
+.fotogrid:hover .card-img-top {
+  transform: scale(1.1); /* Aumenta a imagem quando o rato passa por cima */
+}
+
+.carousel img{
+  border-radius:5px;
+}
+
+
+
+
+/* Geral do footer */
+.custom-footer {
+    padding: 40px 20px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 14px;
+    color: #333;
+  }
+  .footer-line {
+    width: 100%; /* Define o comprimento da linha */
+    height: 1px; /* Altura da linha */
+    background-color: #ccc; /* Cor da linha */
+    margin: 0 auto 40px; /* Centraliza e adiciona margem inferior */
+  }
+
+  /* Parte superior */
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    gap: 20px;
+  }
+
+  .footer-column {
+    flex: 1;
+    min-width: 120px; /* Garante que as colunas tenham um tamanho mínimo */
+  }
+
+  .footer-column h4,
+  .footer-column h5 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #000;
+  }
+
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-column li {
+    margin-bottom: 8px;
+  }
+
+  .footer-column a {
+    text-decoration: none;
+    color: #555;
+  }
+
+  .footer-column a:hover {
+    color: #000;
+  }
+
+  /* Linha inferior */
+  .footer-bottom {
+    padding-top: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .footer-line2 {
+    width: 60%; /* Define o comprimento da linha */
+    height: 1px; /* Altura da linha */
+    background-color: #ccc; /* Cor da linha */
+    margin: 0 auto 20px; /* Centraliza e adiciona margem inferior */
+  }
+
+  .footer-bottom p {
+    margin: 0;
+    font-size: 12px;
+  }
+
+  .footer-bottom a {
+    text-decoration: none;
+    color: #555;
+    margin: 0 5px;
+  }
+
+  .footer-bottom a:hover {
+    color: #000;
+  }
+
+  /* Ícones sociais */
+  .social-icons {
+    margin-top: 10px;
+  }
+
+  .social-icons a {
+    margin: 0 5px;
+    display: inline-block;
+  }
+
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .img-fluid {
+    width: 100%;      /* A largura será sempre 100% da coluna */
+    height: 100%;     /* A altura será 100% da coluna */
+    object-fit: cover; /* As imagens preencherão o espaço da coluna, cortando as partes que não cabem */
+  }
+  .section3.row{
+    margin-bottom: 10px;
+  }
+
+
+  
+.botao-topo img{
+    width: 50px;
+
+}
+.botao-topo{
+    visibility: hidden;
+    bottom: 80px;  
+    text-align: right;
+    padding-right: 50px;
+}
+
+.botao-topo-mostrar{
+    visibility: visible;
+    animation: fade-in 0.7s ease-in forwards;
+}
+.botao-topo-esconder{
+    animation: fade-out 1s ease-out forwards;
+}
+ 

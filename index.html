@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio</title> <!--Título do separador -->
+  <meta name="description"
+    content="Explora o portfólio criativo de Tânia Couto, designer e fotógrafa. Descobre uma coleção de projetos que refletem inovação, paixão e um olhar atento aos detalhes.">
+
+  <link rel="shortcut icon" href="./img/minilogo.png" type="image/x-icon">
+  <!--link para colocar imagem junto do titulo do separador.-->
+
+  <!-- devo colocar o link do bootsrap sempre antes da ligação do ficheiro css, porque posso querer usar algumas classes do bootstrap mas posso mais tarde querer alterar e sobrepor com as minhas definiçoes -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="./css/index.css"> <!--Faz a ligação com o ficheiro de css.-->
+
+
+</head>
+
+<body>
+
+
+
+  <!-- Navbar -->
+  <nav class="navbar sticky-top navbar-expand-lg">
+    <!-- acrescentar sticky top para isto ficar colado ao topo sem desaparecer da página -->
+    <!-- logotipo afixado na nav bar -->
+    <a class="navbar-brand" href="#" <p align="center"><img src="./img/logo_semfundo.png" class="imagem-logo"
+        alt="logótipo do Portfolio de Tânia Couto"></p></a>
+    <!-- código - ms-auto, alinha o conteudo À direita e me-auto alinha à esquerda -->
+    <div class="ms-auto">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <!-- se quiser que o apareça a negrito o nome da pagina coloco o -active- depois da class -->
+            <a class="nav-link" aria-current="page" href="#sobre">Sobre</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#areas">Interesses</a>
+          </li>
+          <!-- # indica que é dentro da propria pagina  -->
+          <li class="nav-item">
+            <a class="nav-link" href="../ProjetoWeb_v1/html/trabalho.html">Fotografia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactar">Contactar</a>
+          </li>
+
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown link
+            </a>
+            artigos no dropdown
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul> 
+          </li>-->
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div id="sobre">
+    <div id="section section1 "
+      style="padding-top:100px; padding-bottom: 80px; width:80%; margin-left: auto; margin-right: auto;">
+      <div class="card fotogrid">
+        <img src="./img/bloco-castanho.png" class="card-img" alt="header1">
+        <!-- <div class="card-img-overlay text-bottom-overlay">
+
+        <h1 class="card-title">Hi!</h1>
+        <h3 class="card-text">Conhece mais do meu portofolio</h3>
+        <p class="card-text"><small>Last updated 3 mins ago</small></p>
+
+      </div> -->
+      </div>
+
+      <div class="block-medium">
+        <div class="apresentation_text">
+          <h1> Olá! Sou a Tânia, <b>designer</b> e apaixonada por <b>fotografia</b>. Aqui poderá conhecer um pouco mais
+            sobre mim, os meus projetos e a minha <b>visão criativa!</b></h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="footer-line"></div>
+
+
+  <div id="areas">
+    <div id="section section3 "
+      style="padding-top:40px; padding-bottom: 100px; width:80%; margin-left: auto; margin-right: auto;">
+
+      <div class="title-work">
+        <h5 class="card-title">Áreas de Interesse</h5>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="./img/rec1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Fotografia</h5>
+              <p class="card-text">A fotografia surge como uma paixão ao qual eu dedico algum do meu tempo limpre. A
+                minha máquina acompanha-me em todas as viagens.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./img/rec2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">UX/UI Design</h5>
+              <p class="card-text"> A área que pretendo trabalhar. Portfólio em desenvolvimento. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./img/rec3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Design de produto</h5>
+              <p class="card-text">Mestrado em Design Industrial e de Produto, com um ano de experiência em Design de
+                Interiores. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="footer-line"></div>
+
+
+  <div id="fotografia-grid">
+
+    <div id="section section1 "
+      style="padding-top:80px; padding-bottom: 80px; width:80%; margin-left: auto; margin-right: auto;">
+
+      <div class="title-work">
+        <h5 class="card-title">A <b> fotografia,</b>
+          <br>como um hobby
+          <br>e uma paixão a tempo inteiro...
+        </h5>
+      </div>
+
+      <div class="cartao-3">
+        <div class="row row-cols-1 row-cols-md-4 g-2">
+
+          <div class="col">
+            <a href="../ProjetoWeb_v1/html/trabalho.html" style="text-decoration: none; color: inherit;">
+              <div class="card h-100 fotogrid">
+                <img src="./img/london4.png" class="card-img-top" alt="...">
+                <div class="card-img-overlay text-bottom-overlay">
+                  <p class="card-title1">Londres</p>
+                  <!-- <p class="card-text">Uma viagem por Londres...</p> -->
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a href="../ProjetoWeb_v1/html/trabalho.html" style="text-decoration: none; color: inherit;">
+              <div class="card h-100 fotogrid">
+                <img src="./img/ferreirotendais.png" class="card-img-top" alt="...">
+
+                <div class="card-img-overlay text-bottom-overlay">
+                  <p class="card-title1">Ferreiro de Tendais</p>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p> -->
+
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a href="../ProjetoWeb_v1/html/trabalho.html" style="text-decoration: none; color: inherit;">
+              <div class="card h-100 fotogrid">
+                <img src="./img/açores.png" class="card-img-top" alt="...">
+
+                <div class="card-img-overlay text-bottom-overlay">
+                  <p class="card-title1">Açores</p>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p> -->
+
+                </div>
+
+              </div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="../ProjetoWeb_v1/html/trabalho.html" style="text-decoration: none; color: inherit;">
+              <div class="card h-100 fotogrid">
+                <img src="./img/espanha.png" class="card-img-top" alt="...">
+
+                <div class="card-img-overlay text-bottom-overlay">
+                  <p class="card-title1">Espanha</p>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p> -->
+
+                </div>
+
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="footer-line"></div>
+
+
+  <div id="contactar">
+    <div id="section section2 "
+      style="padding-top:40px; padding-bottom: 40px; width:80%; margin-left: auto; margin-right: auto;">
+      <div class="contact_text">
+        <h1>Gostou do meu trabalho? Vamos conversar!</h1>
+        <h2>Se tem alguma dúvida, sugestão ou está interessado(a) em colaborar, não hesite em entrar em contacto comigo.
+          Estou sempre disponível para novos projetos e desafios. Fico à espera do seu contacto!"</h2>
+      </div>
+      <a href="mailto:tania.alves.couto@gmail.com"><button type="button" class="btn">Entrar em contacto</button></a>
+    </div>
+  </div>
+
+
+  <div class="footer-line"></div>
+
+<!-- formulário feito apenas com html -->
+  <div id="form-contact" style="padding-top:80px; padding-bottom: 80px; width:80%; margin-left: auto; margin-right: auto;">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          
+          <div class="title-work">
+            <h3 class="form-name"> Contactos </h3>
+            
+            <form action="" method="get">
+              <label for="nome"> Nome: </label>
+              <input type="text" name="nome" id="nome" placeholder="Insira nome">
+              <br><br>
+              <label for="nome"> E-mail: </label>
+              <input type="email" name="email" id="email" placeholder="Insira e-mail">
+              <br><br>
+              <label for="nome"> Mensagem: </label>
+              <input type="text" name="mensagem" id="mensagem" placeholder="Escreva a sua mensagem">
+              <br><br>
+              <input type="date" name="data" id="data" placeholder="Insira a data">
+              <br><br>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 1 2 3 4 5 6 7 8 9 10</p>
+              <label for="nome"> Número de pessoas: </label>
+              <input type="range" name="n_pessoas" id="n_pessoas" placeholder="Número de pessoas:">
+              <br><br>
+              <input type="tel" name="telefone" id="telefone" placeholder="Insira Nº telefone">
+              <br><br>
+              <input type="time" name="tempo" id="tempo">
+              <input type="submit" value=" Enviar">
+            </form>
+
+            
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div id="mapa" class="mapa">
+            <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11528.812434680864!2d-8.659533572628522!3d41.11245834015882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2470011ae25cb9%3A0x10f9b38938cd3dc5!2sPraia%20de%20Canide%20Sul!5e1!3m2!1spt-BR!2spt!4v1733259559017!5m2!1spt-BR!2spt"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+          </div>
+  
+          
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+
+  <!-- Footer -->
+  <footer class="custom-footer">
+    <div class="footer-line"></div>
+    <div class="footer-top">
+      <div class="footer-column">
+        <h4>Tânia Couto</h4>
+      </div>
+      <!-- <div class="footer-column">
+        <h5>Páginas</h5>
+        <ul>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Premium Paper</a></li>
+          <li><a href="#">Testing Pens</a></li>
+          <li><a href="#">Paper Layouts</a></li>
+        </ul>
+      </div> -->
+      <div class="footer-column">
+        <h5>Páginas</h5>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#areas">Áreas de Interesse</a></li>
+          <li><a href="./html/trabalho.html">Fotografia</a></li>
+        </ul>
+      </div>
+      <!-- <div class="footer-column">
+        <h5>Brand</h5>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Brand Assets</a></li>
+          <li><a href="#">Black Friday</a></li>
+          <li><a href="#">Retailers</a></li>
+          <li><a href="#">Sustainable Practices</a></li>
+        </ul>
+      </div> -->
+      <div class="footer-column">
+        <h5>Contactos</h5>
+        <ul>
+          <li><a href="#">tania.alves.couto@gmail.com</a></li>
+          <li><a href="#">(+351) 915637408</a></li>
+          <li><a href="#">Porto, Portugal</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-line2"></div>
+      <p>&copy; taniaalvescouto 2024</p>
+      <!-- <a href="#">Privacy Policy</a> · <a href="#">Terms and Conditions</a> · <a
+          href="#">Livro de Reclamações</a> -->
+      <div class="social-icons">
+        <a href="https://www.behance.net/taniacouto" target="_blank"><img src="./img/behance.png" alt="Behance"></a>
+        <a href="https://www.linkedin.com/in/taniaalvescouto/" target="_blank"><img src="./img/linkedin.png"
+            alt="Instagram"></a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="botao-topo sticky-bottom">
+    <a href="#">
+      <img src="./img/setatopo.png" alt="">
+    </a>
+</div>
+
+</body>
+
+</html>
+
+<!-- <script src="./js/botao_topo.js"></script> -->
+<script>
+  const botaoTopo = document.querySelector(".botao-topo");
+
+  window.addEventListener("scroll", function(event){
+    if (window.scrollY >= 100) {
+      botaoTopo.classList.add("botao-topo-mostrar");
+      botaoTopo.classList.remove("botao-topo-esconder");
+    } else {
+      botaoTopo.classList.add("botao-topo-esconder");
+      botaoTopo.classList.remove("botao-topo-mostrar");
+    }
+  });
+</script>

@@ -1,0 +1,70 @@
+
+    .zoom-restringido{
+        overflow: hidden;
+    }
+
+    .card.img{
+        width: 100%;
+
+    }
+
+  .card img:hover{
+        transform: scale(1.2); /* aumenta a imagem em 20%*/
+        /*translate: -30px; move a imagem em x/y */
+        transition: transform 1s ease; /*tempo de transiçao 0.5segundo*/
+       } 
+
+
+   .section1.card img{
+    width: 100%;
+   
+   }
+
+   .section1.card{
+    margin-left: auto; 
+    margin-right: auto;
+   }
+
+   .section1{
+    width: 100%;
+    margin-left: auto ;
+    margin-right: auto;
+   }
+  
+   .section2{
+    width: 40%;
+    margin-left: auto ;
+    margin-right: auto;
+   }
+
+
+/* colocar dentro apenas aquilo que queremos alterar para telemovel */
+   @media screen and (max-width:559px) {
+
+    .imagem-logo{
+        height: 50px; 
+        border-radius: 10px;
+        margin-top: 2px;
+    }
+    
+   }
+
+/* colocar dentro apenas aquilo que queremos alterar para tablet */
+@media screen and (min-width:600px) {
+
+    
+   }
+
+   /* colocar dentro apenas aquilo que queremos alterar para TV */
+@media screen and (min-width:1900px) {
+
+    
+}
+
+
+
+
+
+
+
+
