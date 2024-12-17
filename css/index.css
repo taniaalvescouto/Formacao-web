@@ -270,9 +270,11 @@ h1,h2,h3,h4,h5,h6{
 
 
 
+
 /* Geral do footer */
 .custom-footer {
-    padding: 40px 20px;
+    margin-top: 100px;
+    padding: 10px 5px;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-size: 14px;
@@ -293,7 +295,7 @@ h1,h2,h3,h4,h5,h6{
     max-width: 60%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
+    margin-top: 20px;
     gap: 20px;
   }
 
@@ -371,6 +373,9 @@ h1,h2,h3,h4,h5,h6{
     width: 30px;
     height: 30px;
   }
+  /* acaba footer */
+
+
 
   .img-fluid {
     width: 100%;      /* A largura será sempre 100% da coluna */
@@ -382,7 +387,7 @@ h1,h2,h3,h4,h5,h6{
   }
 
 
-  
+/* geral botão */
 .botao-topo img{
     width: 50px;
 
@@ -401,4 +406,4 @@ h1,h2,h3,h4,h5,h6{
 .botao-topo-esconder{
     animation: fade-out 1s ease-out forwards;
 }
- 
+ /* acaba botao */
