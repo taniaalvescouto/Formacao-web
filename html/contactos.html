@@ -78,17 +78,72 @@
 
 
 
-    <div id="validate-form-contact"
+    <div id="form-contact"
         style="padding-top:80px; padding-bottom: 80px; width:80%; margin-left: auto; margin-right: auto;">
         <div class="container">
 
+            <div class="title-work">
+                <h5 class="card-title"> Contactos </h5>
+            </div>
+
             <div class="row">
-                <div class="col-12">
-                    <div class="contact_text">
-                        <h1>Obrigada pelo contacto!</h1>
-                        <h2>Em breve irá receber um e-mail de resposta. </h2>
-                      </div>
+                <div class="col-12 col-md-6">
+
+                    <form action="https://api.staticforms.xyz/submit" method="post">
+                        <!-- CONFIGURAÇÕES PARA O FORMULÁRIO -->
+                        <input type="hidden" name="accessKey" value="d52fae44-5d7f-4e93-919f-618d68d7b297">
+                        <!--Chave de configuração-->
+                        <input type="hidden" name="redirectTo"
+                        value="http://localhost:3000/html/resposta.html">
+                        <!-- URL da página a ser re-direcionada após envio da informação-->
+                        <input type="hidden" name="replyTo" value="@">
+                        <input type="text" name="honeypot" style="display: none;">
+                        <!-- FIM DAS CONFIGURAÇÕES PARA O FORMULÁRIO -->
+
+                        <!-- campos do formulário (colocar um $ nos nomes dos campos) -->
+                        <div class="form-floating mb-3">
+                            <input type="text" name="$nome" id="nome" 
+                            placeholder="Insira nome" class="form-control" required>
+                            <label for="floatingInput"> Nome </label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="email" name="$email" id="email" 
+                            placeholder="E-mail" class="form-control">
+                            <label for="floatingInput"> E-mail: </label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="telefone" name="$telefone" id="telefone" 
+                            placeholder="telefone" class="form-control" pattern="[0-9]{9}" required>
+                            <label for="floatingInput"> Telefone </label>
+                        </div>
+
+                        <label for="nome"> Mensagem: </label>
+                        <textarea name="mensagem" class="form-control" id="floatingTextarea2" rows="3"></textarea>
+                        <br><br>
+
+                        <input type="date" name="$data" id="data" placeholder="Insira a data" class="form-control">
+                        <br><br>
+
+                        <button type="submit" class="btn-1" value="submit">Solicitar Informações</button>
+                    </form>
+
+
                 </div>
+
+                <div class="col-12 col-md-6">
+                    <div id="mapa" class="mapa">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11528.812434680864!2d-8.659533572628522!3d41.11245834015882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2470011ae25cb9%3A0x10f9b38938cd3dc5!2sPraia%20de%20Canide%20Sul!5e1!3m2!1spt-BR!2spt!4v1733259559017!5m2!1spt-BR!2spt"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    </div>
+
+
+                </div>
+
             </div>
         </div>
     </div>

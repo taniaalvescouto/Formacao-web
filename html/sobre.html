@@ -250,6 +250,129 @@
                 </div> -->
 
 
+ <!-- formulário feito apenas com html -->
+ <div id="form-contact"
+ style="padding-top:80px; padding-bottom: 80px; width:80%; margin-left: auto; margin-right: auto;">
+ <div class="container">
+     <div class="row">
+         <div class="col-12 col-md-6">
+
+             <div class="title-work">
+                 <h3 class="form-name"> Contactos </h3>
+
+                 <form action="" method="get">
+                     <label for="nome"> Nome: </label>
+                     <input type="text" name="nome" id="nome" placeholder="Insira nome">
+                     <br><br>
+                     <label for="nome"> E-mail: </label>
+                     <input type="email" name="email" id="email" placeholder="Insira e-mail">
+                     <br><br>
+                     <label for="nome"> Mensagem: </label>
+                     <input type="text" name="mensagem" id="mensagem" placeholder="Escreva a sua mensagem">
+                     <br><br>
+                     <input type="date" name="data" id="data" placeholder="Insira a data">
+                     <br><br>
+                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         1 2 3 4 5 6 7 8 9 10</p>
+                     <label for="nome"> Número de pessoas: </label>
+                     <input type="range" name="n_pessoas" id="n_pessoas" placeholder="Número de pessoas:">
+                     <br><br>
+                     <input type="tel" name="telefone" id="telefone" placeholder="Insira Nº telefone">
+                     <br><br>
+                     <input type="time" name="tempo" id="tempo">
+                     <input type="submit" value=" Enviar">
+                 </form>
+
+
+             </div>
+         </div>
+
+         <div class="col-12 col-md-6">
+             <div id="mapa" class="mapa">
+                 <iframe
+                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11528.812434680864!2d-8.659533572628522!3d41.11245834015882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2470011ae25cb9%3A0x10f9b38938cd3dc5!2sPraia%20de%20Canide%20Sul!5e1!3m2!1spt-BR!2spt!4v1733259559017!5m2!1spt-BR!2spt"
+                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                     referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+             </div>
+
+
+         </div>
+     </div>
+ </div>
+</div>
+
+            <div id="contatos" style="padding-top: 80px;"> 
+
+            <div class="card mb-3" style="max-width: 100%;">
+              <div class="row g-0">
+                <div class="col-md-6">
+                  <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11528.812434680864!2d-8.659533572628522!3d41.11245834015882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2470011ae25cb9%3A0x10f9b38938cd3dc5!2sPraia%20de%20Canide%20Sul!5e1!3m2!1spt-BR!2spt!4v1733259559017!5m2!1spt-BR!2spt" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+        
+                  </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h3 class="card-title text-center">Pedido de Informação</h3>
+                    
+                    <div class="formulario">
+                      <form action="https://api.staticforms.xyz/submit" method="post">
+                      <!-- CONFIGURAÇÕES PARA O FORMULÁRIO -->
+                      <input type="hidden" name="accessKey" value="a5941ab9-528c-482a-a075-c35db154ec24xxxx"> <!--Chave de configuração-->
+                      <input type="hidden" name="redirectTo" value="http://localhost:3000/html/resposta.html"> <!-- URL da página a ser re-direcionada após envio da informação-->
+                      <input type="hidden" name="replyTo" value="@">
+                      <input type="text" name="honeypot" style="display: none;">
+                      <!-- FIM DAS CONFIGURAÇÕES PARA O FORMULÁRIO -->
+
+                      <!-- CAMPOS DO FORMULÁRIO (colocar um $ nos nomes dos campos)-->
+                        <div class="campo-nome mb-2">
+                          <input type="text" class="form-control" id="nome" 
+                          placeholder="Nome:" name="$nome" required>
+                          <label for="nome">Nome:</label>
+                        </div>
+
+                        <div class="form-floating mb-2">
+                          <input type="email" class="form-control" id="email" 
+                          placeholder="" name="$email">
+                          <label for="floatingInput">Email:</label>
+                        </div>
+
+                        <div class="form-floating mb-2">
+                          <input type="tel" class="form-control" id="telefone" 
+                          placeholder="Telefone" name="$telefone" pattern="[0-9]{9}" required>
+                          <label for="floatingInput">Telefone:</label>
+                        </div>
+
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea class="form-control" placeholder="Mensagem:" id="mensagem" 
+                          name="$mensagem"></textarea>
+
+                        <label for="opcao">Opção:</label>
+                        <select class="form-control">
+                          <option selected>Menu</option>
+                          <option value="1">Opção 1</option>
+                          <option value="2">Opção 2</option>
+                          <option value="3">Opção 3</option>
+                        </select>
+                        <!-- FIM DOS CAMPOS DO FORMULÁRIO -->
+                        <br>
+                        <div class="text-center">
+                          <button type="submit" class="btn btn-primary botao-enviar" value="submit">Solicitar Informação</button>
+                        </div>
+                    </form>
+                  </div>
+    
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+
+          </div>
+
+
 <!-- Footer -->
 <footer class="custom-footer">
   <div class="footer-line"></div>
