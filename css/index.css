@@ -255,6 +255,14 @@ h1,h2,h3,h4,h5,h6{
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
 }
 
+.fotogrid2 {
+  overflow: hidden; /* Garante que a imagem não "sai" do card */
+}
+
+.fotogrid2:hover {
+  filter: grayscale(100%);
+}
+
 .card-img-top {
   transition: transform 0.3s ease; /* Animação suave para a imagem */
 }
