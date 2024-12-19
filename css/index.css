@@ -192,7 +192,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .contact_text h1{
   font-weight: 600;
-  color:  rgb(223, 181, 46);;
+  color:  rgb(223, 181, 46);
 }
 
 .btn{
@@ -257,11 +257,13 @@ h1,h2,h3,h4,h5,h6{
 
 .fotogrid2 {
   overflow: hidden; /* Garante que a imagem não "sai" do card */
+  transition: filter 0.5s ease;
 }
 
 .fotogrid2:hover {
   filter: grayscale(100%);
 }
+
 
 .card-img-top {
   transition: transform 0.3s ease; /* Animação suave para a imagem */
@@ -276,6 +278,44 @@ h1,h2,h3,h4,h5,h6{
 }
 
 
+/* breadcrumbs */
+.breadcrumb {
+  list-style: none;
+  display: flex;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 20px;
+
+}
+
+.breadcrumb li {
+  margin: 0 5px;
+}
+
+.breadcrumb li a {
+  text-decoration: none;
+  font-weight: 600;
+  color:  rgb(223, 181, 46)
+}
+
+.breadcrumb li a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb li::after {
+  content: ">";
+  margin-left: 2px;
+  color: #000000;
+}
+
+.breadcrumb li:last-child::after {
+  content: ""; /* Remove the arrow for the last item */
+}
+
+.breadcrumb li:last-child a {
+  color: #000000;
+  pointer-events: none; /* Make the last link unclickable */
+}
 
 
 
@@ -415,3 +455,69 @@ h1,h2,h3,h4,h5,h6{
     animation: fade-out 1s ease-out forwards;
 }
  /* acaba botao */
+
+ 
+/* colocar dentro apenas aquilo que queremos alterar para telemovel */
+@media screen and (max-width:559px) {
+
+  .imagem-logo{
+      height: 100px; 
+      border-radius: 10px;
+      margin-top: 2px;
+  }
+  .nav-link{
+    margin-left: 20px;
+    /* caso queira colocar botão na nav, como configurar */
+    background-color: rgb(223, 181, 46);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+   }
+   .navbar-toggler{
+    margin-bottom: 10px;
+    margin-left: 20px;
+   }
+  
+ }
+
+/* colocar dentro apenas aquilo que queremos alterar para tablet */
+@media screen and (min-width:600px) {
+  .imagem-logo{
+    height: 100px; 
+    border-radius: 10px;
+    margin-top: 2px;
+}
+.nav-link{
+  margin-left: 20px;
+  /* caso queira colocar botão na nav, como configurar */
+  background-color: rgb(223, 181, 46);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  width: 150px;
+  text-align: center;
+  margin-top: 2px;
+  margin-bottom: 2px;
+ }
+ .navbar-toggler{
+  margin-bottom: 20px;
+  margin-left: 30px;
+ }
+
+}
+
+ /* colocar dentro apenas aquilo que queremos alterar para TV */
+@media screen and (min-width:1900px) {
+
+  
+}
+
+
+
+
+
+
+
+
